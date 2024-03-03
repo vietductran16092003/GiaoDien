@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <!-- Navigation menu -->
+  <ul class="nav">
+    <h1 style="font-family: Arial, Helvetica, sans-serif;text-align: center;" >ADMIN</h1>
+    <li><b href="#" onclick="manageAccounts();">Quản lý tài khoản</b></li>
+    <li ><b href="#" onclick="manageOrders()">Quản lý đơn hàng</b></li>
+    <li ><b href="#" onclick="manageProducts()">Quản lý sản phẩm</b></li>
+    <li><b href="#" onclick="statistics()">Thống kê</b></li><br><br><br>
+    <li ><b href="#" onclick="logout()">Đăng xuất</b></li>
+  </ul>
+
+  <!-- Content -->
+ 
+  <div class="manage_accounts">
+    <table class="table" id="managementTable" style="display: none; ">
+      <thead >
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+          <th>Mã tài khoản</th>
+          <th>Họ tên</th>
+          <th>Email</th>
+          <th>Số điện thoại</th>
+          <th>Địa chỉ</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+  </div>
+  
+  <div id="manage_orders">
+    <!-- Thêm nội dung quản lý đơn hàng ở đây -->
+  </div>
+
+  <div id="manage_products">
+    <!-- Thêm nội dung quản lý sản phẩm ở đây -->
+  </div>
+
+  <div id="statistics">
+    <!-- Thêm nội dung thống kê ở đây -->
+  </div>
+
+  <div id="logout">
+    <!-- Thêm nút hoặc logic đăng xuất ở đây -->
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // JavaScript
+    // Function to load manage accounts page
+    function manageAccounts() {
+      var table = document.getElementById("managementTable");
+      if (table.style.display === "none") {
+        table.style.display = "table";
+      } else {
+        table.style.display = "none";
+      }
+    }
+
+    // Function to load manage orders page
+    function manageOrders() {
+    
+    }
+
+    // Function to load manage products page
+    function manageProducts() {
+
+    }
+
+    // Function to load statistics page
+    function statistics() {
+
+    }
+
+    // Function to perform logout
+    function logout() {
+      alert("Đăng xuất thành công!");
+    }
+  </script>
+</body>
+</html>
